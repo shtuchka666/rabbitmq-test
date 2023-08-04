@@ -1,0 +1,20 @@
+{
+  "name": "rabbitmq-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "m1.js",
+  "scripts": {
+    "install:rabbitmq": "docker run -d -p 5672:5672 rabbitmq",
+    "dev": "concurrently \"node ./m1\" \"node ./m2\""
+  },
+  "keywords": [],
+  "author": "Ekaterina Um. <eum.dev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "micromq": "^3.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
